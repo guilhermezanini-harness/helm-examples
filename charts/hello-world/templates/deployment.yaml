@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: {{ include "hello-world.fullname" . }}
   labels:
+    app_lane_id: {{ .Values.test }}
     {{- include "hello-world.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
