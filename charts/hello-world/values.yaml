@@ -12,7 +12,7 @@ image:
 
 nameOverride: ""
 fullnameOverride: ""
-test: ""
+app_lane_id: ""
 
 serviceAccount:
   # Specifies whether a service account should be created
